@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agência Digital</title>
+  <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- reset -->
+  <style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'DM Serif Display', serif;
+    }
+
+    p,
+    span,
+    a {
+      font-family: 'Raleway', sans-serif;
+    }
+  </style>
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          container: {
+            center: true,
+          },
+          width: {
+            wrapper: '1088px',
+          },
+          colors: {
+            main: '#54a8c7',
+            bgLight: '#eff7fa',
+            bg: '#fefefe',
+            text: '#343f52',
+            textLight: '#aab0bc',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-bg selection:bg-mainDark selection:text-text">
+  <!-- header -->
+  <header class="fixed w-full m-auto z-[99]">
+    <nav class="container py-8 flex items-center justify-between">
+      <figure>
+        <a href="#home">
+          <h6 class="text-text text-3xl">Agência Digital</h6>
+        </a>
+      </figure>
+      <div class="flex gap-12 text-text">
+        <a href="#" class="transition text-md hover:text-main font-[600]">Home</a>
+        <a href="#quem-somos" class="transition text-md hover:text-main font-[600]">Quem somos</a>
+        <a href="#projetos" class="transition text-md hover:text-main font-[600]">Projetos</a>
+        <a href="#blog" class="transition text-md hover:text-main font-[600]">Blog</a>
+        <a href="#contato" class="transition text-md hover:text-main font-[600]">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero -->
+  <main class="h-screen flex items-center justify-center relative">
+    <div class="container wrapper">
+
+    </div>
+  </main>
+</body>
+
+</html>
