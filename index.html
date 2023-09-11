@@ -9,24 +9,7 @@
   <link rel="shortcut icon" href="assets/icons/logo.svg" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- reset -->
-  <style>
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'DM Serif Display', serif;
-    }
-
-    p,
-    span,
-    a {
-      font-family: 'Raleway', sans-serif;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300&display=swap" rel="stylesheet">
   <!-- tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -41,20 +24,52 @@
           },
           colors: {
             main: '#54a8c7',
-            bgLight: '#eff7fa',
+            mainLight: '#eff7fa',
+            mainMid: '#e4f1f6',
             bg: '#fefefe',
             text: '#343f52',
             textLight: '#aab0bc',
+          },
+          lineHeight: {
+            title: '1.10',
           }
-        }
+        },
       }
     }
   </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Serif Display', serif;
+      }
+      p,
+      span,
+      a {
+        font-family: 'Raleway', sans-serif;
+      }
+      h1, h2, h3, h4, h5, h6, p, span, a {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .number {
+        font-family: 'Roboto', sans-serif;
+      }
+      .wrapper {
+        padding: 64px 112px;
+      }
+      .button {
+        padding: 14px 32px;
+        width: max-content;
+        border-radius: 500px;
+        font-weight: 700;
+      }
+    }
+  </style>
 </head>
 
-<body class="bg-bg selection:bg-mainDark selection:text-text">
+<body class="bg-bg selection:bg-main selection:text-text">
   <!-- header -->
-  <header class="fixed w-full m-auto z-[99]">
+  <header class="w-full m-auto z-[99] bg-bg">
     <nav class="container py-8 flex items-center justify-between">
       <figure>
         <a href="#home">
@@ -72,9 +87,28 @@
   </header>
 
   <!-- hero -->
-  <main class="h-screen flex items-center justify-center relative">
-    <div class="container wrapper">
-
+  <main class="container wrapper flex items-center justify-evenly py-12 bg-mainLight rounded-xl relative">
+    <div class="flex flex-col">
+      <h1 class="text-text text-5xl leading-title">Criando soluções<br>personalizadas para o<br>seu projeto.</h1>
+      <p class="text-text text-xl mt-4">Somos uma empresa que prioriza a construção de<br>relacionamentos duradouros com os clientes.</p>
+      <div class="mt-8 flex flex-row gap-6">
+        <a href="#" class="button bg-main text-bg border-2 border-main transition hover:translate-y-[-4px]">Quem somos</a>
+        <a href="#" class="button text-main border-2 border-main transition hover:translate-y-[-4px]">Entre em contato</a>
+      </div>
+    </div>
+    <div>
+      <figure>
+        <img src="assets/images/hero.png" alt="Profissional">
+      </figure>
+    </div>
+    <div class="flex flex-row bg-bg py-6 px-4 rounded-xl absolute right-[12%] bottom-[16%] shadow-lg">
+      <figure class="w-[48px] h-[48px] bg-mainMid rounded-full">
+        <img src="" alt="">
+      </figure>
+      <div class="flex flex-col ml-4">
+        <p class="font-[600] text-text">Clientes satisfeitos</p>
+        <span class="font-[400] text-text number">15000+</span>
+      </div>
     </div>
   </main>
 </body>
