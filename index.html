@@ -24,7 +24,7 @@
           },
           colors: {
             main: '#54a8c7',
-            mainLight: '#eff7fa',
+            mainLight: '#ebf3f7',
             mainMid: '#e4f1f6',
             bg: '#fefefe',
             text: '#343f52',
@@ -67,12 +67,12 @@
   </style>
 </head>
 
-<body class="bg-bg selection:bg-main selection:text-text">
+<body class="bg-bg selection:bg-main selection:text-bg">
   <!-- header -->
   <header class="w-full m-auto z-[99] bg-bg">
     <nav class="container py-8 flex items-center justify-between">
       <figure>
-        <a href="#home">
+        <a href="#">
           <h6 class="text-text text-3xl">Agência Digital</h6>
         </a>
       </figure>
@@ -106,11 +106,113 @@
         <img src="" alt="">
       </figure>
       <div class="flex flex-col ml-4">
-        <p class="font-[600] text-text">Clientes satisfeitos</p>
-        <span class="font-[400] text-text number">15000+</span>
+        <span class="font-[700] text-text text-xl number">15000+</span>
+        <p class="font-[400] text-text text-sm">Clientes satisfeitos</p>
       </div>
     </div>
   </main>
+
+  <!-- clients -->
+  <!-- <div class="container wrapper">
+    <div>
+      <h2 class="text-text text-5xl leading-title">Confiança de<br>15000+ clientes</h2>
+      <p class="text-text text-xl mt-4">Trazemos soluções para facilitar a<br>vida de nossos clientes.</p>
+    </div>
+  </div> -->
+
+  <!-- who are we -->
+  <div class="container wrapper flex items-center gap-16 mt-16">
+    <div>
+      <figure class="rounded-xl overflow-hidden">
+        <img src="assets/images/whoarewe.jpg" alt="Nossa equipe">
+      </figure>
+    </div>
+    <div class="w-1/2">
+      <h2 class="text-text text-5xl leading-title">Quem somos?</h2>
+      <p class="text-text text-xl mt-4">Nós somos uma empresa de marketing digital e branding que<br>acredita no poder da estratégia criativa, aliada a um ótimo design.</p>
+      <p class="text-text text-xl mt-2">Somos uma empresa de marketing digital e branding que acredita na força da <span class="bg-mainMid">estratégia criativa</span> e do excelente design para criar marcas impactantes.</p>
+      <div class="flex flex-row gap-6 mt-5">
+        <div class="flex flex-col">
+          <figure class="mb-2">
+            <img src="assets/icons/missao.png" alt="" class="w-[48px] h-[48px] object-cover">
+          </figure>
+          <span class="font-[700] text-text text-xl">Nossa missão</span>
+          <p class="font-[400] text-text text-md mt-1">Capacitar marcas no mundo digital com estratégia criativa e design excepcional para criar conexões duradouras com o público-alvo.</p>
+        </div>
+        <div class="flex flex-col">
+          <figure class="mb-2">
+            <img src="assets/icons/visao.png" alt="" class="w-[48px] h-[48px] object-cover">
+          </figure>
+          <span class="font-[700] text-text text-xl">Nossa visão</span>
+          <p class="font-[400] text-text text-md mt-1">Tornar-se líder reconhecida em marketing digital e branding, conhecida pela excelência criativa e impacto no design.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- what we do -->
+  <div class="container wrapper flex items-center gap-16 mt-16">
+    <div class="w-1/2">
+      <h2 class="text-text text-5xl leading-title">O que fazemos?</h2>
+      <p class="text-text text-xl mt-4">O conjunto completo de serviços que disponibilizamos foi especialmente criado para atender às necessidades e projetos do seu negócio.</p>
+      <div class="flex flex-row gap-6 mt-5 w-full">
+
+        <div class="w-full flex flex-col gap-8">
+          <div class="flex flex-col">
+            <figure class="mb-2">
+              <img src="assets/icons/marketing.png" alt="" class="w-[48px] h-[48px] object-cover">
+            </figure>
+            <span class="font-[700] text-text text-xl">Marketing</span>
+            <p class="text-text text-md mt-2">Serviços de marketing que<br>geram resultados reais.</p>
+          </div>
+          <div class="flex flex-col">
+            <figure class="mb-2">
+              <img src="assets/icons/missao.png" alt="" class="w-[48px] h-[48px] object-cover">
+            </figure>
+            <span class="font-[700] text-text text-xl">Estratégia</span>
+            <p class="text-text text-md mt-2">Desenvolvimento de serviços personalizados para suas necessidades.</p>
+          </div>
+        </div>
+
+        <div class="w-full flex flex-col gap-8">
+          <div class="flex flex-col">
+            <figure class="mb-2">
+              <img src="assets/icons/dev.png" alt="" class="w-[48px] h-[48px] object-cover">
+            </figure>
+            <span class="font-[700] text-text text-xl">Desenvolvimento</span>
+            <p class="text-text text-md mt-2">Estratégias sob medida para o seu sucesso.</p>
+          </div>
+          <div class="flex flex-col">
+            <figure class="mb-2">
+              <img src="assets/icons/data.png" alt="" class="w-[48px] h-[48px] object-cover">
+            </figure>
+            <span class="font-[700] text-text text-xl">Análise de Dados</span>
+            <p class="text-text text-md mt-2">Análise de dados para otimizar seus serviços.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div>
+      <figure class="rounded-xl overflow-hidden">
+        <img src="assets/images/whatwedo.jpg" alt="Equipe trabalhando">
+      </figure>
+    </div>
+  </div>
+
+  <!-- costumer talks -->
+  <div class="container px-[224px] flex items-center justify-between bg-mainLight rounded-xl relative mt-32">
+    <figure class="mt-[-88px] w-1/2">
+      <img src="assets/images/costumer.png" alt="Foto de cliente">
+    </figure>
+    <div class="flex-1 text-center">
+      <span class="w-full m-auto text-sm">⭐️ ⭐️ ⭐️ ⭐️ ⭐️</span>
+      <p class="text-text mt-4 text-lg leading-loose">"Minha experiência com esta empresa tem sido incrível. Eles entendem nossas necessidades com carinho e entregam soluções excepcionais. Sua equipe competente, criativa e prestativa tem sido fundamental para o sucesso de nosso negócio. Recomendo-os calorosamente para quem busca resultados reais e um parceiro dedicado."</p>
+      <p class="text-text mt-5 text-md font-[600]">Ana Becker</p>
+      <p class="text-text text-sm font-[300]">Analista Financeira</p>
+    </div>
+  </div>
+
 </body>
 
 </html>
