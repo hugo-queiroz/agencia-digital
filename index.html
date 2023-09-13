@@ -32,6 +32,9 @@
           },
           lineHeight: {
             title: '1.10',
+          },
+          boxShadow: {
+            teamCard: '16px 16px 4px 0px #e4f1f6',
           }
         },
       }
@@ -77,11 +80,11 @@
         </a>
       </figure>
       <div class="flex gap-12 text-text">
-        <a href="#" class="transition text-md hover:text-main font-[600]">Home</a>
-        <a href="#quem-somos" class="transition text-md hover:text-main font-[600]">Quem somos</a>
-        <a href="#projetos" class="transition text-md hover:text-main font-[600]">Projetos</a>
-        <a href="#blog" class="transition text-md hover:text-main font-[600]">Blog</a>
-        <a href="#contato" class="transition text-md hover:text-main font-[600]">Contato</a>
+        <a href="#" class="transition text-md hover:text-main font-[500]">Home</a>
+        <a href="#quem-somos" class="transition text-md hover:text-main font-[500]">Quem somos</a>
+        <a href="#projetos" class="transition text-md hover:text-main font-[500]">Projetos</a>
+        <a href="#blog" class="transition text-md hover:text-main font-[500]">Blog</a>
+        <a href="#contato" class="transition text-md hover:text-main font-[500]">Contato</a>
       </div>
     </nav>
   </header>
@@ -121,7 +124,7 @@
   </div> -->
 
   <!-- who are we -->
-  <div class="container wrapper flex items-center gap-16 mt-16">
+  <section class="container wrapper flex items-center gap-16 mt-16">
     <div>
       <figure class="rounded-xl overflow-hidden">
         <img src="assets/images/whoarewe.jpg" alt="Nossa equipe">
@@ -148,10 +151,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- what we do -->
-  <div class="container wrapper flex items-center gap-16 mt-16">
+  <section class="container wrapper flex items-center gap-16 mt-16">
     <div class="w-1/2">
       <h2 class="text-text text-5xl leading-title">O que fazemos?</h2>
       <p class="text-text text-xl mt-4">O conjunto completo de serviços que disponibilizamos foi especialmente criado para atender às necessidades e projetos do seu negócio.</p>
@@ -198,10 +201,10 @@
         <img src="assets/images/whatwedo.jpg" alt="Equipe trabalhando">
       </figure>
     </div>
-  </div>
+  </section>
 
   <!-- costumer talks -->
-  <div class="container px-[224px] flex items-center justify-between bg-mainLight rounded-xl relative mt-32">
+  <section class="container px-[224px] flex items-center justify-between bg-mainLight rounded-xl relative mt-32">
     <figure class="mt-[-88px] w-1/2">
       <img src="assets/images/costumer.png" alt="Foto de cliente">
     </figure>
@@ -211,8 +214,79 @@
       <p class="text-text mt-5 text-md font-[600]">Ana Becker</p>
       <p class="text-text text-sm font-[300]">Analista Financeira</p>
     </div>
-  </div>
+  </section>
 
+  <!-- our team -->
+  <section class="container wrapper mt-16">
+    <div class="flex">
+      <div class="w-2/5 text-text">
+        <h2 class="text-5xl leading-title">Nosso time incrível</h2>
+        <p class="text-xl mt-4">Relaxe e fique à vontade enquanto cuidamos das necessidades do seu negócio.</p>
+      </div>
+      <div class="flex-1 flex justify-evenly">
+        <div class="flex flex-col items-center">
+          <figure>
+            <img src="assets/icons/team1.png" alt="Icon 1" class="w-[56px] h-[56px] object-cover">
+          </figure>
+          <h6 class="text-text text-4xl mt-2 mb-1">15000+</h6>
+          <p class="text-text text-lg">Clientes satisfeitos</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <figure>
+            <img src="assets/icons/team2.png" alt="Icon 2" class="w-[56px] h-[56px] object-cover">
+          </figure>
+          <h6 class="text-text text-4xl mt-2 mb-1">7518</h6>
+          <p class="text-text text-lg">Projetos entregues</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <figure>
+            <img src="assets/icons/team3.png" alt="Icon 3" class="w-[56px] h-[56px] object-cover">
+          </figure>
+          <h6 class="text-text text-4xl mt-2 mb-1">242</h6>
+          <p class="text-text text-lg">Funcionários especialistas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12 flex justify-between">
+      <div class="shadow-teamCard rounded-xl overflow-hidden ">
+        <figure>
+          <img src="assets/images/team1.jpg" alt="Ana Becker">
+        </figure>
+        <div class="ml-4 p-4">
+          <p class="text-text text-lg font-[600]">Ana Becker</p>
+          <p class="text-text text-md font-[300]">Analista Financeira</p>
+        </div>
+      </div>
+      <div class="shadow-teamCard rounded-xl overflow-hidden ">
+        <figure>
+          <img src="assets/images/team2.jpg" alt="Ana Becker">
+        </figure>
+        <div class="ml-4 p-4">
+          <p class="text-text text-lg font-[600]">Ana Becker</p>
+          <p class="text-text text-md font-[300]">Analista Financeira</p>
+        </div>
+      </div>
+      <div class="shadow-teamCard rounded-xl overflow-hidden ">
+        <figure>
+          <img src="assets/images/team3.jpg" alt="Ana Becker">
+        </figure>
+        <div class="ml-4 p-4">
+          <p class="text-text text-lg font-[600]">Ana Becker</p>
+          <p class="text-text text-md font-[300]">Analista Financeira</p>
+        </div>
+      </div>
+      <div class="shadow-teamCard rounded-xl overflow-hidden ">
+        <figure>
+          <img src="assets/images/team4.jpg" alt="Ana Becker">
+        </figure>
+        <div class="ml-4 p-4">
+          <p class="text-text text-lg font-[600]">Ana Becker</p>
+          <p class="text-text text-md font-[300]">Analista Financeira</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
